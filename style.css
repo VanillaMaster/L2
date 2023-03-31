@@ -1,0 +1,45 @@
+.play-pause {
+    margin: 0;
+    padding: 0;
+}
+
+.play-pause > svg {
+    height: 2em;
+    width: 2em;
+    display: block;
+    fill: #808080;
+}
+
+.controlls {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+#controlls-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+
+    height: -webkit-fill-available;
+}
+
+#buffer,
+#out {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#buffer > div{
+    overflow-y: scroll;
+    height: 100%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/index.js" type="module"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div id="controlls-container">
+
+    </div>
+
+    <fieldset id="buffer">
+        <legend>buffer</legend>
+        <div>
+            
+        </div>
+    </fieldset>
+
+    <fieldset id="out">
+        <legend>out</legend>
+        <div>
+
+        </div>
+    </fieldset>
+
+
+
+    <template id="controlls">
+
+        <fieldset>
+            <legend>thread name</legend>
+            <div class="controlls">
+                <button class="play-pause">
+                    <svg class="icon-style"><use href="#icon-pause"></use></svg>
+                </button>
+            
+                <input type="range" class="speed" min="10" max="300">
+            </div>
+        </fieldset>
+
+    </template>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        
+        <!-- svg icons -->
+
+        <symbol id="icon-pause" viewBox="0 96 960 960">
+            <path d="M525 796V356q0-24.75 17.625-42.375T585 296h115q24.75 0 42.375 17.625T760 356v440q0 24.75-17.625 42.375T700 856H585q-24.75 0-42.375-17.625T525 796Zm-325 0V356q0-24.75 17.625-42.375T260 296h115q24.75 0 42.375 17.625T435 356v440q0 24.75-17.625 42.375T375 856H260q-24.75 0-42.375-17.625T200 796Zm385 0h115V356H585v440Zm-325 0h115V356H260v440Z"/>
+        </symbol>
+    
+        <symbol id="icon-play" viewBox="0 96 960 960">
+            <path d="M366 824q-15 10-30.5 1T320 798V348q0-18 15.5-27t30.5 1l354 226q14 9 14 25t-14 25L366 824Zm14-251Zm0 171 269-171-269-171v342Z"/>
+        </symbol>
+    </svg>
+
+</body>
+</html>
